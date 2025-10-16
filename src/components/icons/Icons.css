@@ -1,0 +1,17 @@
+.icon {
+    width: 64px;
+    height: 64px;
+    color: #d9d9d9; /* Default muted tone */
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+
+  .plate-icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .fork-icon {
+    width: 48px;
+    height: 48px;
+  }

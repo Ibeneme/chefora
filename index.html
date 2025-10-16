@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.chefora.app/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Responsive Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Title -->
+    <title>Chefora | Discover, Order & Enjoy Great Food Anywhere</title>
+
+    <!-- SEO Description -->
+    <meta
+      name="description"
+      content="Chefora is your all-in-one food companion — discover amazing restaurants, order delicious meals, and get them delivered fast. Experience smart, simple, and personalized dining with Chefora."
+    />
+
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:site_name" content="Chefora" />
+    <meta
+      property="og:title"
+      content="Chefora | Discover, Order & Enjoy Great Food Anywhere"
+    />
+    <meta
+      property="og:description"
+      content="Explore top-rated restaurants, order meals effortlessly, and get them delivered to your door. Chefora makes dining easy and enjoyable."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.chefora.app" />
+    <meta property="og:image" content="https://www.chefora.app/og-image.png" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Chefora | Discover, Order & Enjoy Great Food Anywhere"
+    />
+    <meta
+      name="twitter:description"
+      content="Discover your next favorite meal with Chefora — the smarter way to explore restaurants and order food online."
+    />
+    <meta name="twitter:image" content="https://www.chefora.app/og-image.png" />
+
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Chefora",
+        "operatingSystem": "iOS, Android, Web",
+        "applicationCategory": "Food & Drink",
+        "url": "https://www.chefora.app",
+        "logo": "https://www.chefora.app/vite.svg",
+        "sameAs": [
+          "https://twitter.com/cheforaapp",
+          "https://www.instagram.com/cheforaapp",
+          "https://www.linkedin.com/company/cheforaapp"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "1342"
+        },
+        "description": "Chefora connects you to your favorite restaurants and local cuisines, letting you explore menus, order online, and track your delivery in real time."
+      }
+    </script>
+
+    <!-- Tailwind & Font Setup -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Rethink Sans"', "ui-sans-serif", "system-ui"]
+            },
+            colors: {
+              cheforaRed: "#E63946",
+              cheforaGold: "#FFD166"
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+
+  <body class="font-sans bg-white text-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

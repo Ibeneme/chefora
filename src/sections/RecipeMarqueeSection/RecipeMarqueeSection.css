@@ -1,0 +1,57 @@
+/* RecipeMarqueeSection.css */
+
+/* Keyframes for scrolling */
+@keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  /* Marquee containers */
+  .marquee-left {
+    animation: scroll-left 40s linear infinite; /* Adjust duration for speed */
+    display: inline-flex;
+  }
+  
+  .marquee-right {
+    animation: scroll-right 40s linear infinite;
+    display: inline-flex;
+  }
+  
+  /* Wrapper to hide overflow and maintain horizontal scroll */
+  .marquee-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  /* Text style (can be overridden in component if needed) */
+  .marquee-text {
+    font-weight: 700; /* Extra bold */
+    margin: 0 1rem;
+    color: #1f2937; /* Tailwind gray-900 */
+    font-size: 3rem; /* Base size, adjust with media queries */
+  }
+  
+  @media (min-width: 768px) {
+    .marquee-text {
+      font-size: 4.5rem; /* md:text-7xl */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .marquee-text {
+      font-size: 6rem; /* lg:text-8xl */
+    }
+  }
